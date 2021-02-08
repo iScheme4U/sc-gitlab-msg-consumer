@@ -1,0 +1,14 @@
+dev:
+  # whether this program is running is development mode
+  dev_mode: False
+
+# rocketmq configurations
+rocketmq:
+  # name server ip
+  name_server_ip: "localhost"
+  # name server port
+  name_server_port: 9876
+  # group id
+  group_id: "GITLAB_WEBHOOK_MSG_CONSUMER"
+  # message topic
+  msg_topic: "GITLAB_WEBHOOK"
