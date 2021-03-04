@@ -18,8 +18,11 @@ It is possible to install the tool with `pip`::
 Configuration
 -------------
 
-You can copy `default.yml <https://github.com/Scott-Lau/sc-gitlab-msg-consumer/blob/master/consumer/tests/sample_config/default.yml>`_ to `~/.sc-gitlab-msg-consumer/production.yml`
-to initialize the production configuration.
+First, make sure /var/opt/sc directory exists, if not create this directory and make sure current user has the right
+to create files in this directory.
+
+You can copy `default.yml <https://github.com/Scott-Lau/sc-gitlab-msg-consumer/blob/master/consumer/tests/sample_config/default.yml>`_
+to /var/opt/sc/.sc-gitlab-msg-consumer/production.yml to initialize the production configuration.
 
 The default configuration file looks like this::
 
@@ -47,20 +50,14 @@ After installation and configuration, you can simply run this program using::
 
     sh sc-gitlab-msg-consumer
 
-Logs will be saved at ~/logs/sc-sys.log
+Logs will be saved at /tmp/logs/sc-sys.log
 
 Dependencies
 ------------
 
-* `sc-utilities <https://github.com/Scott-Lau/sc-utilities>`_ >= 0.0.1
-* `sc-config <https://github.com/Scott-Lau/sc-config>`_ >= 0.0.2
+* `sc-utilities <https://github.com/Scott-Lau/sc-utilities>`_ >= 0.0.2
+* `sc-config <https://github.com/Scott-Lau/sc-config>`_ >= 0.0.3
 * `rocketmq-client-python <https://github.com/apache/rocketmq-client-python>`_ >= 2.0.0
-
-Changes
--------
-
-Version 0.0.1
-    * Initial version
 
 License
 -------

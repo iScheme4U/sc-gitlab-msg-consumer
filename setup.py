@@ -76,8 +76,8 @@ setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        'sc-utilities>=0.0.1',
-        'sc-config>=0.0.2',
+        'sc-utilities>=0.0.2',
+        'sc-config>=0.0.3',
         'rocketmq-client-python>=2.0.0',
     ],
     package_data={
